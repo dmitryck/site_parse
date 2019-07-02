@@ -1,0 +1,17 @@
+#!/bin/env ruby
+
+require_relative 'grab_service'
+
+params = {
+  country:  ARGV[0] || 'RUS',
+  sym_from: ARGV[1] || 'A',
+  sym_to:   ARGV[2] || 'B'
+}
+
+File.write "file/result.csv", GrabService.new(params).get_csv!
+
+puts "################################################"
+puts
+puts "use 'cat file/result.csv && echo' to see results"
+puts
+puts "################################################"
