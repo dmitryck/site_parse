@@ -9,6 +9,7 @@ GEM
       mime-types-data (~> 3.2015)
     mime-types-data (3.2019.0331)
     mini_portile2 (2.4.0)
+    minitest (5.11.3)
     netrc (0.11.0)
     nokogiri (1.10.3)
       mini_portile2 (~> 2.4.0)
@@ -24,6 +25,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  minitest
   nokogiri
   rest-client
 
