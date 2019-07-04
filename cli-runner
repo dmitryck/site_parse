@@ -12,6 +12,6 @@ File.write "file/result.csv", GrabService.new(params).get_csv!
 
 puts "################################################"
 puts
-puts "use 'cat file/result.csv && echo' to see results"
+puts "use 'cat file/result.csv' to see results"
 puts
 puts "################################################"

@@ -16,9 +16,7 @@
           <xsl:value-of select="normalize-space(span)"/>
         </xsl:if>
       </xsl:for-each>
-      <xsl:if test="$tr != last()">
-        <xsl:text>&#xA;</xsl:text>
-      </xsl:if>
+      <xsl:text>&#xA;</xsl:text>
     </xsl:for-each>
   </xsl:template>
 </xsl:stylesheet>
